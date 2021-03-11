@@ -1,7 +1,7 @@
 const { GoogleSpreadsheet } = require("google-spreadsheet")
-const google_config = require("../config/babban-script-config.json")
+require("dotenv").config();
 
-const sheetUniqueId = "1VvwaJdDwQ2XCzs5-GdhROlm48CEEPVzpZ6LV4MpP1Ic"
+const sheetUniqueId = process.env.GOOGLE_SHEET_UNIQUE_ID;
 const spreadsheet = new GoogleSpreadsheet(sheetUniqueId)
 
 module.exports = {
@@ -9,9 +9,9 @@ module.exports = {
   // Setup
   setup: async () => {
     await spreadsheet.useServiceAccountAuth({
-      client_email: google_config.client_email,
-      private_key: google_config.private_key,
-    })
+      client_email: process.env.CLIENT_EMAIL,
+      private_key: process.env.PRIVATE_KEY,
+    });
 
     let info = await spreadsheet.loadInfo()
     return info

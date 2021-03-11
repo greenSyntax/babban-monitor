@@ -28,6 +28,5 @@ async function main() {
 
 // Trigger On every 10 Minutes
 schedular.scheduleEveryMinutes(1, () => {
-  console.log('Main...')
-  main()
-})
+  main();
+});

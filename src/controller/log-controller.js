@@ -1,5 +1,4 @@
-const spreadsheet = require('../helper/google-sheet-log-helper')
-const google_config = require('../config/babban-script-config.json')
+const spreadsheet = require("../helper/google-sheet-log-helper");
 const { info, error } = require('../helper/term-color-helper')
 const {fromJSON} = require('../utility')
 
