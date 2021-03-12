@@ -1,7 +1,7 @@
 # Bhola Babban ✊
 Network Bandwidth Logging CLI
 
-![alt text](https://raw.githubusercontent.com/greenSyntax/babban/main/assets/google-sheet-log.png)
+![Google_Sheet_Graph](https://github.com/greenSyntax/babban/blob/main/assets/sheet-graph.png)
 
 ### Inspiration
 BSNL Broaband Service who provoked me to write this script 🤬
